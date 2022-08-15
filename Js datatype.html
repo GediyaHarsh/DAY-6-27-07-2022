@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Data type</title>
+    <style>
+        #data1{
+            width: 49.75%;
+            margin-right: 0.5%;
+        }
+        #data2{
+            width: 49.75%;
+            margin-left: 0.5%;
+        }
+        #data div{
+            background-color: rgb(24, 103, 182);
+            margin-top: 140px;
+            margin-bottom: 140px;
+            padding-top: 80px;
+            float: left;
+            text-align: center;
+            height: 400px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="data">
+        <div id="data1">
+            <h2>JavaScript</h2>
+
+            <p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+
+            <p id="demo"></p>
+
+            <script>
+                let x = 99 + "THAR";
+                document.getElementById("demo").innerHTML = x;
+            </script>
+        </div>
+        <div id="data2">
+            <h2>JavaScript</h2>
+
+            <p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+
+            <p id="demo1"></p>
+
+            <script>
+                let a = 25 + 75 + "BMW";
+                document.getElementById("demo1").innerHTML = a;
+            </script>
+        </div>
+    </div>
+</body>
+</html>

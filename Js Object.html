@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object</title>
+
+    <style>
+        #object1{
+            width: 50%;
+            margin-right: 0.25%;
+        }
+        #object2{
+            width: 50%;
+        }
+        #object div{
+            background-color: rgba(124, 42, 196, 0.705);
+            margin-top: 100px;
+            text-align: center;
+            height: 350px;
+            font-size: 30px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="object">
+        <div id="object1">
+            <h2>JavaScript Objects</h2>
+
+            <p id="demo"></p>
+
+            <script>
+                // Create an object:
+                const car = {type:"BMW", model:"500", color:"lightblue"};
+
+                // Display some data from the object:
+                document.getElementById("demo").innerHTML = "The car type is " + car.type;
+            </script>
+        </div>
+        <div id="object2">
+            <h2>JavaScript Objects</h2>
+
+            <p id="demo1"></p>
+
+            <script>
+                // Create an object:
+                const person = {
+                  firstName: "Jack",
+                  lastName: "Peterson",
+                  age: 50,
+                  eyeColor: "Dark Black"
+                };
+
+                // Display some data from the object:
+                document.getElementById("demo1").innerHTML =
+                person.firstName + " is " + person.age + " years old.";
+            </script>
+        </div>
+    </div>
+</body>
+</html>

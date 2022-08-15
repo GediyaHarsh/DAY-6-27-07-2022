@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function</title>
+    <style>
+        #function1{
+            width: 45.75%;
+            margin-right: 0.25%;
+        }
+        #function2{
+            width: 45.75%;
+            margin-left: 0.25%;
+        }
+        #Function div{
+            background-color: rgb(225, 196, 64);
+            margin-top: 140px;
+            margin-bottom: 140px;
+            padding-top: 150px;
+            float: left;
+            text-align: center;
+            height: 450px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Function">
+        <div id="function1">
+            <h2>JavaScript Functions</h2>
+
+            <p id="demo"></p>
+
+            <script>
+                document.getElementById("demo").innerHTML =
+                "The temperature is " + toCelsius(77) + " Celsius";
+
+                function toCelsius(fahrenheit) {
+                return (5/9) * (fahrenheit-32);
+                } 
+            </script>
+        </div>
+        <div id="function2">
+            <h2>JavaScript Functions</h2>
+
+            <p>This example calls a function which performs a calculation, and returns the result:</p>
+
+            <p id="demo1"></p>
+
+            <script>
+                function myFunction(p1, p2) {
+              return p1 * p2;
+                }
+                document.getElementById("demo1").innerHTML = myFunction(4, 3);
+            </script>
+        </div>
+    </div>
+</body>
+</html>
